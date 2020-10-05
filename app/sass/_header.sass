@@ -1,0 +1,101 @@
+.header
+	padding-top: 50px
+	padding-bottom: 208px
+	background: url(../images/src/header/header_bg.jpg) no-repeat top center
+	background-size: cover
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	&__menu
+	&__nav
+		.top-nav
+			&__list
+				display: flex
+				justify-content: space-between
+				padding: 0
+				margin: 0
+				a
+					&:hover
+						color: $accent
+						border-bottom: 2px solid $accent
+			&__item
+				display: inline
+				@include p_18_bold
+				color: $white
+			&__list
+	&__tel
+		text-align: right
+		.tel
+			&__link
+				@include p_16_bold
+				color: $white
+				padding-bottom: 4px
+				border-bottom: 2px solid $accent
+				&:hover
+					color: $accent
+
+	&__main
+		padding-top: 190px
+	&__intro
+		.block-text
+			&__title
+				@include heading_h1_64_bold
+				color: $white
+				margin-bottom: 50px
+			&__descr
+				@include p_14_reg
+				color: $white
+				margin-bottom: 40px
+			&__button
+			&__link
+				@include btn
+				width: 160px
+	&__slider
+	.owl-carousel
+		width: 350px
+		height: 570px
+		.item
+			img
+				display: block
+				width: 100%
+				height: auto
+	.owl-nav
+		display: flex
+		margin-top: 30px
+		justify-content: space-between
+
+	.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot 
+		display: flex
+		align-items: center
+		background: none
+		text-decoration: none
+		@include p_18_bold
+		color: #C4C4C4
+		&:hover
+			color: #fff
+		&:focus
+			text-decoration: none
+			outline: none
+			color: $white
+
+	.owl-next
+		#next
+			margin-right: 25px
+		&:focus, &:hover
+			svg
+				#arrow_next
+					fill: #fff
+
+	.owl-prev
+		#prev
+			margin-left: 25px
+		&:focus, &:hover
+			svg
+				#arrow_prev
+					fill: #fff
+	
+
+
+
+
+
+
+

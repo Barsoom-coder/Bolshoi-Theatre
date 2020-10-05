@@ -1,0 +1,57 @@
+.contacts
+	@include header_section_h2
+	padding-bottom: 80px
+	&__connect
+		.contacts-block
+			&__tel
+				display: block
+				@include p_16_bold
+				margin-bottom: 25px
+			&__mail
+				display: block
+				@include p_16_bold
+				margin-bottom: 25px
+			&__address
+				@include p_16_bold
+	
+	&__form
+		min-width: 730px
+		min-height: 190px
+		.button-block
+			direction: rtl
+		.form-group
+			&__name
+				@include input
+			&__company
+				@include input
+			&__tel
+				@include input
+			&__mail
+				@include input
+			&__garanty
+				width: 390px
+				font-family: Open Sans,sans-serif
+				font-weight: 400
+				font-size: 12px
+				margin: 0
+				line-height: 150%
+				color: #989898
+				margin-left: 15px
+			&__button
+				@include btn
+				width: 190px
+			&__area
+				width: 300px
+				height: 100px
+				background: #444444
+				border: 1px solid #616161
+				font-family: Open Sans, sans-serif
+				font-weight: 600
+				color: #989898
+				font-size: 12px
+				line-height: 150%
+				display: flex
+				align-items: center
+				padding: 12px
+				padding-top: 8px
+				text-transform: capitalize

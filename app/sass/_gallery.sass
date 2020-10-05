@@ -1,0 +1,52 @@
+.gallery
+	.container-xl
+		min-width: 100%
+	margin-left: 150px
+	// .offset-1
+		// margin-left: 7.7%
+	padding-bottom: 150px
+	@include header_section_h2
+	.main-gallery
+		// max-width: 1753
+		&__slider
+			.item
+				position: relative
+				opacity: 0.4
+				img
+					display: block
+					width: 100%
+					height: auto
+		&__title
+			@include h3_24_bold
+			display: block
+			position: absolute
+			width: 300px
+			height 100%
+			left: 40px
+			top: 40px
+			z-index: 2
+			margin: 0
+		&__date
+			@include p_18_bold
+			display: block
+			position: absolute
+			width: 135px
+			height 30px
+			margin: 0
+			transform: rotate(-90deg)
+			left: -20px
+			bottom: 95px
+			z-index: 2
+		&__link
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			z-index: 2
+		&__img
+			width: 30px
+			height: 30px
+			padding: 35px
+			background: $gold
+			border-radius: 50%
+	

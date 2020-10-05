@@ -1,0 +1,201 @@
+// USER VARIABLES SECTION
+
+// 	MAIN COLORS
+$black: #333333
+$white: #ffffff
+$gray: #C4C4C4
+$gold: #D1A954
+
+$accent: $gold // Accent Color
+
+// MIXINS
+
+@mixin p_16_bold()
+	font-family: $OpenSansCondensed
+	font-size: 16px
+	line-height: 22px
+	font-weight: 700
+	letter-spacing: 0.05em
+	text-transform: uppercase
+	color: $white
+
+@mixin p_18_bold()
+	font-family: $OpenSansCondensed
+	font-size: 18px
+	line-height: 25px
+	font-weight: 700
+	letter-spacing: 0.1em
+	text-transform: uppercase
+	color: $white
+
+@mixin p_21_bold()
+	font-family: $OpenSansCondensed
+	font-size: 21px
+	line-height: 29px
+	font-weight: 700
+	letter-spacing: 0.1em
+	text-transform: uppercase
+	color: $white
+
+@mixin heading_h1_64_bold()
+	font-family: $OpenSansCondensed
+	font-size: 64px
+	line-height: 87px
+	letter-spacing: 0.1em
+	font-weight: 700
+	text-transform: uppercase
+	color: $white
+
+@mixin h3_24_bold()
+	font-family: $OpenSansCondensed
+	font-size: 24px
+	line-height: 33px
+	font-weight: 700
+	letter-spacing: 0.05em
+	text-transform: uppercase
+	color: $white
+
+@mixin h2_48_light()
+	font-family: $OpenSansCondensed
+	font-size: 48px
+	line-height: 65px
+	font-weight: 300
+	letter-spacing: 0.1em
+	text-transform: uppercase
+	color: $white
+	
+
+
+@mixin p_14_reg()
+	font-family: $OpenSans
+	font-size: 14px
+	line-height: 150%
+	font-weight: 400
+	color: $white
+
+@mixin p_16_reg()
+	font-family: $OpenSans
+	font-weight: 400
+	font-size: 16px
+	line-height: 150%
+	color: $white
+
+@mixin btn()
+	@include p_18_bold
+	color: $white
+	background-color: $gold
+	display: block
+	text-align: center
+	padding: 14px 0 14px 0
+	cursor: pointer
+	border: 1px solid transparent
+	&:hover
+		color: $gold
+		background-color: transparent 
+		border: 1px solid $gold
+
+@mixin header_section_h2()
+	&__title
+		@include	h2_48_light
+		color: $white
+		text-align: center
+		margin-bottom: 100px
+		span 
+			color: $gold
+			padding-right: 15px
+
+@mixin mb_25()
+	margin-bottom: 25px
+	
+
+@mixin input()
+	font-family: Open Sans, sans-serif
+	font-weight: 600
+	font-size: 12px
+	line-height: 150%
+	display: flex
+	padding: 12px
+	text-transform: capitalize
+	align-items: center
+	color: #989898
+	background: #444444
+	border:  1px solid #616161
+	width: 100%
+	max-height: 35px
+
+
+
+	
+
+
+
+$fontsize: 16px // Body Font Size
+$textcolor: $white // Text Color
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$OpenSans: 'Open Sans', sans-serif // Open Sans
+$OpenSansCondensed: 'Open Sans Condensed', sans-serif // Opens Sans Condensed
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+@import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		// font-display: swap // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2')
+// @include font('OpenSansCondensedLight', light, 300, '../fonts/opensanscondensed-light-webfont.woff')
+// @include font('OpenSansCondensedBold', bold, 700, '../fonts/opensanscondensed-bold-webfont.woff')
+// @include font('OpenSansRegular', regular, 400, '../fonts/opensans-regular-webfont.woff')
+// @include font('OpenSansCondensedLight', light, 300, '../fonts/opensanscondensed-light-webfont.eot')
+// @include font('OpenSansCondensedBold', bold, 700, '../fonts/opensanscondensed-bold-webfont.eot')
+// @include font('OpenSansRegular', regular, 400, '../fonts/opensans-regular-webfont.eot')
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #989898
+	opacity: 0.8
+
+::selection
+	background-color: $accent
+	color: #fff
+
+ul, li 
+	text-decoration: none
+	list-style-type: none
+	display: inline
+	padding: 0
+	margin: 0
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+	
+body
+	font-family: $OpenSans
+	font-size: $fontsize
+	min-width: 320px
+	max-width: 1920px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	color: $textcolor
+	background-color: $black
+
+.container
+	

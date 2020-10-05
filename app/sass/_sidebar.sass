@@ -1,0 +1,33 @@
+.nav-sidebar
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+			position: fixed
+			overflow-x: hidden
+			left: 0
+			top: 0
+			text-align: center
+			height: 100%
+			width: 150px
+			z-index: 9999
+			background: rgba(51, 51, 51, 0.75)
+			&__block
+				margin-bottom: 85px
+			&__list
+			&__link
+				&:hover
+					filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+					svg
+						#hover
+							fill: #D1A954
+							fill-opacity: 1
+			&__item
+				display: block
+				margin-top: 40px
+			&__img
+			&__text
+				@include p_18_bold
+				transform: rotate(-90deg)
+				transform-origin: 18% -70%
+				min-width: max-content
+				color: #C4C4C4

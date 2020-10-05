@@ -1,0 +1,29 @@
+.about
+	padding-top: 150px
+	padding-bottom: 150px
+	@include header_section_h2
+	&__theater
+		.main-text
+			&__title
+				@include p_21_bold
+				margin-bottom: 40px
+			&__descr
+				@include p_14_reg
+				margin: 0
+	&__numbers
+		.main-numbers
+			&__title
+				@include p_21_bold
+				margin-bottom: 40px
+		.main-block
+			span 
+				color: $gold
+			&__img
+				margin-bottom: 15px
+			&__stat
+				@include p_16_bold
+				text-transform: lowercase
+	&__image
+		widows: 100%
+		height: auto
+

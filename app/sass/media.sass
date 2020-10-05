@@ -1,0 +1,765 @@
+@include media-breakpoint-up(xs)
+@include media-breakpoint-up(sm)
+@include media-breakpoint-up(md)
+@include media-breakpoint-up(lg)
+@include media-breakpoint-up(xl)
+
+
+@include media-breakpoint-down(xs)
+	// .header
+	// 	padding-top: 56px
+	// 	&__slider
+	// 		display: none
+	// 	&__main
+	// 	&__nav
+	// 		.top-nav
+	// 			&__list
+	// 				display: none
+	// 	&__intro
+	// 		text-align: center
+	// 		.block-text
+	// 			&__title
+	// 				letter-spacing: 0.09em
+	// 			&__descr
+	// 				text-align: left
+
+	// .nav-sidebar
+	// 	display: none
+
+	// .hamburger
+	// 	position: absolute
+	// 	padding: 0
+	// 	width: 27px
+	// 	height: 20px
+	// 	z-index: 9999
+	// 	left: 40px
+	// 	top: 55px
+	// .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+	// 	width: 27px
+	// 	height: 3px
+	// 	border-radius: none
+	// 	background-color: #fff
+	// .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after
+	// 	background-color: #fff
+	// .hamburger-inner::before
+	// 	width: 22px
+	// .hamburger-inner
+	// 	width: 14px
+	// .hamburger.is-active .hamburger-inner
+	// 	width: 22px
+
+
+	// .mm-navbar_sticky
+	// 	display: none
+	// .mm-listitem:after
+	// 	display: none
+	
+	// .mm-listitem
+	// 	display: inline
+	// 	@include h3_24_bold
+	// 	color: $white
+	// 	&:hover
+	// 		color: $accent
+	// 	&__text
+	// 		padding: 0
+	// 		padding-bottom: 35px
+	// .mm-listitem_selected>.mm-listitem__text
+	// .mm-listview
+	// 	padding-top: 140px
+	// 	padding-left: 39px
+
+	// .mm-menu_offcanvas 
+	// 	width: 80%
+	// 	min-width: 300px
+	// 	max-width: 300px
+
+	// .wrapper
+	// 	position: relative
+	// 	display: flex
+	// 	width: 140px
+	// 	height: 126px
+	// 	margin: 0 auto
+	// 	margin-top: 54px
+	// 	margin-left: 40px
+	// 	&__item
+	// 		&:hover
+				
+	// 			svg
+	// 				#hover
+	// 					fill: #D1A954
+	// 					fill-opacity: 1
+
+	// .vk
+	// 	position: absolute
+	// 	right: 0
+	// 	bottom: 0
+	// .youtube
+	// 	position: absolute
+	// 	left: 0
+	// 	bottom: 0
+	// .fase
+	// 	position: absolute
+	// 	left: 0
+	// 	top: 0
+	// .insta
+	// 	position: absolute
+	// 	top: 0
+	// 	right: 0
+
+	// .about
+	// 	&__theater
+	// 		text-align: center
+	// 		.main-text
+	// 	&__numbers
+	// 		.main-numbers
+	// 			&__title
+	// 				padding-top: 40px
+	// 				text-align: center
+	// 			&__wrapper
+	// 				display: flex
+	// 				justify-content: space-evenly
+	// 	&__image
+	// 		display: none
+
+	// .gallery
+	// 	margin-left: 0
+	// 	.main-gallery
+	// 		.owl-stage
+	// 			transform: none
+	// 		&__title
+	// 			text-align: initial
+	// .header__nav
+	// 	display: none
+
+	// .achiev
+	// 	background-size: cover
+	// 	&__text
+	// 		.block-text
+	// 			&__descr
+	// 				font-size: 27px
+
+
+	// .contacts
+	// 	&__form
+	// 		.button-block
+	// 			display: flex
+	// 			justify-content: center
+	// 		min-width: 510px
+	// 		.form-group
+	// 			&__area
+	// 				width: 100%
+	// 			&__garanty
+	// 				text-align: center
+	// 				width: 100%
+	// 	&__connect
+	// 		display: flex
+	// 		justify-content: space-between
+	// 		margin-top: 80px
+	// 		.contacts-block
+	// 			&__phones
+	// 				display: inline-block
+	// 				max-width: 150px
+	// 				margin: 0
+	// 			&__cont
+	// 				max-width: 300px
+	// 				display: flex
+	// 				flex-direction: column
+	// 				align-items: flex-end
+@include media-breakpoint-down(sm)
+	.header
+		padding-top: 56px
+		padding-bottom: 107px
+		&__slider
+			display: none
+		&__main
+			padding-top: 114px
+		&__nav
+			.top-nav
+				&__list
+					display: none
+		&__intro
+			text-align: center
+			.block-text
+				&__title
+					letter-spacing: 0.09em
+				&__descr
+					text-align: left
+				&__button
+					display: flex
+					justify-content: center
+
+	.nav-sidebar
+		display: none
+
+	.hamburger
+		position: absolute
+		padding: 0
+		width: 27px
+		height: 20px
+		z-index: 9999
+		left: 40px
+		top: 55px
+	.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+		width: 27px
+		height: 3px
+		border-radius: none
+		background-color: #fff
+	.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after
+		background-color: #fff
+	.hamburger-inner::before
+		width: 22px
+	.hamburger-inner
+		width: 14px
+	.hamburger.is-active .hamburger-inner
+		width: 22px
+
+
+	.mm-navbar_sticky
+		display: none
+	.mm-listitem:after
+		display: none
+	
+	.mm-listitem
+		display: inline
+		@include h3_24_bold
+		color: $white
+		&:hover
+			color: $accent
+		&__text
+			padding: 0
+			padding-bottom: 35px
+	.mm-listitem_selected>.mm-listitem__text
+	.mm-listview
+		padding-top: 140px
+		padding-left: 39px
+
+	.mm-menu_offcanvas 
+		width: 80%
+		min-width: 300px
+		max-width: 300px
+
+	.wrapper
+		position: relative
+		display: flex
+		width: 140px
+		height: 126px
+		margin: 0 auto
+		margin-top: 54px
+		margin-left: 40px
+		&__item
+			&:hover
+				
+				svg
+					#hover
+						fill: #D1A954
+						fill-opacity: 1
+
+	.vk
+		position: absolute
+		right: 0
+		bottom: 0
+	.youtube
+		position: absolute
+		left: 0
+		bottom: 0
+	.fase
+		position: absolute
+		left: 0
+		top: 0
+	.insta
+		position: absolute
+		top: 0
+		right: 0
+
+	.about
+		padding-top: 80px
+		padding-bottom: 50px
+		&__title
+			margin-bottom: 60px
+		&__theater
+			text-align: center
+			.main-text
+		&__numbers
+			.main-numbers
+				&__title
+					padding-top: 40px
+					text-align: center
+				&__wrapper
+					display: flex
+					justify-content: space-evenly
+		&__image
+			display: none
+
+	.gallery
+		padding-bottom: 70px
+		margin-left: 0
+		.main-gallery
+			.owl-stage
+				transform: none
+			&__title
+				text-align: initial
+	.header__nav
+		display: none
+
+	.achiev
+		background-size: cover
+		&__text
+			.block-text
+				&__descr
+					font-size: 27px
+
+	.partners
+		padding-top: 80px
+		padding-bottom: 80px
+
+
+	.contacts
+		padding-bottom: 60px
+		&__title
+			margin-bottom: 60px
+		&__form
+			.button-block
+				display: flex
+				justify-content: center
+			min-width: 510px
+			.form-group
+				&__area
+					width: 100%
+				&__garanty
+					text-align: center
+					width: 100%
+		&__connect
+			display: flex
+			justify-content: space-between
+			margin-top: 80px
+			.contacts-block
+				&__phones
+					display: inline-block
+					max-width: 150px
+					margin: 0
+				&__cont
+					max-width: 300px
+					display: flex
+					flex-direction: column
+					align-items: flex-end
+
+@include media-breakpoint-down(md)
+@include media-breakpoint-down(lg)
+
+@include media-breakpoint-only(xs) 
+@include media-breakpoint-only(sm)
+	.header
+		padding-top: 56px
+		padding-bottom: 107px
+		&__slider
+			display: none
+		&__main
+			padding-top: 114px
+		&__nav
+			.top-nav
+				&__list
+					display: none
+		&__intro
+			text-align: center
+			.block-text
+				&__title
+					letter-spacing: 0.09em
+				&__descr
+					text-align: left
+
+	.nav-sidebar
+		display: none
+
+	.hamburger
+		position: absolute
+		padding: 0
+		width: 27px
+		height: 20px
+		z-index: 9999
+		left: 40px
+		top: 55px
+	.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+		width: 27px
+		height: 3px
+		border-radius: none
+		background-color: #fff
+	.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after
+		background-color: #fff
+	.hamburger-inner::before
+		width: 22px
+	.hamburger-inner
+		width: 14px
+	.hamburger.is-active .hamburger-inner
+		width: 22px
+
+
+	.mm-navbar_sticky
+		display: none
+	.mm-listitem:after
+		display: none
+	
+	.mm-listitem
+		display: inline
+		@include h3_24_bold
+		color: $white
+		&:hover
+			color: $accent
+		&__text
+			padding: 0
+			padding-bottom: 35px
+	.mm-listitem_selected>.mm-listitem__text
+	.mm-listview
+		padding-top: 140px
+		padding-left: 39px
+
+	.mm-menu_offcanvas 
+		width: 80%
+		min-width: 300px
+		max-width: 300px
+
+	.wrapper
+		position: relative
+		display: flex
+		width: 140px
+		height: 126px
+		margin: 0 auto
+		margin-top: 54px
+		margin-left: 40px
+		&__item
+			&:hover
+				
+				svg
+					#hover
+						fill: #D1A954
+						fill-opacity: 1
+
+	.vk
+		position: absolute
+		right: 0
+		bottom: 0
+	.youtube
+		position: absolute
+		left: 0
+		bottom: 0
+	.fase
+		position: absolute
+		left: 0
+		top: 0
+	.insta
+		position: absolute
+		top: 0
+		right: 0
+
+	.about
+		padding-top: 80px
+		padding-bottom: 50px
+		&__title
+			margin-bottom: 60px
+		&__theater
+			text-align: center
+			.main-text
+		&__numbers
+			.main-numbers
+				&__title
+					padding-top: 40px
+					text-align: center
+				&__wrapper
+					display: flex
+					justify-content: space-evenly
+		&__image
+			display: none
+
+	.gallery
+		padding-bottom: 70px
+		margin-left: 0
+		.main-gallery
+			.owl-stage
+				transform: none
+			&__title
+				text-align: initial
+	.header__nav
+		display: none
+
+	.achiev
+		background-size: cover
+		&__text
+			.block-text
+				&__descr
+					font-size: 27px
+
+	.partners
+		padding-top: 80px
+		padding-bottom: 80px
+
+
+	.contacts
+		padding-bottom: 60px
+		&__title
+			margin-bottom: 60px
+		&__form
+			.button-block
+				display: flex
+				justify-content: center
+			min-width: 510px
+			.form-group
+				&__area
+					width: 100%
+				&__garanty
+					text-align: center
+					width: 100%
+		&__connect
+			display: flex
+			justify-content: space-between
+			margin-top: 80px
+			.contacts-block
+				&__phones
+					display: inline-block
+					max-width: 150px
+					margin: 0
+				&__cont
+					max-width: 300px
+					display: flex
+					flex-direction: column
+					align-items: flex-end
+
+@include media-breakpoint-only(md)
+	.header
+		padding-top: 56px
+		&__slider
+			display: none
+		&__main
+		&__nav
+			.top-nav
+				&__list
+					display: none
+		&__intro
+			text-align: center
+			.block-text
+				&__descr	
+
+	.nav-sidebar
+		display: none
+
+	.hamburger
+		position: absolute
+		padding: 0
+		width: 27px
+		height: 20px
+		z-index: 9999
+		left: 40px
+		top: 55px
+	.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+		width: 27px
+		height: 3px
+		border-radius: none
+		background-color: #fff
+	.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after
+		background-color: #fff
+	.hamburger-inner::before
+		width: 22px
+	.hamburger-inner
+		width: 14px
+	.hamburger.is-active .hamburger-inner
+		width: 22px
+
+
+	.mm-navbar_sticky
+		display: none
+	.mm-listitem:after
+		display: none
+	
+	.mm-listitem
+		display: inline
+		@include h3_24_bold
+		color: $white
+		&:hover
+			color: $accent
+		&__text
+			padding: 0
+			padding-bottom: 35px
+	.mm-listitem_selected>.mm-listitem__text
+	.mm-listview
+		padding-top: 140px
+		padding-left: 39px
+
+	.mm-menu_offcanvas 
+		width: 80%
+		min-width: 300px
+		max-width: 300px
+
+	.wrapper
+		position: relative
+		display: flex
+		width: 140px
+		height: 126px
+		margin: 0 auto
+		margin-top: 54px
+		margin-left: 40px
+		&__item
+			&:hover
+				
+				svg
+					#hover
+						fill: #D1A954
+						fill-opacity: 1
+
+	.vk
+		position: absolute
+		right: 0
+		bottom: 0
+	.youtube
+		position: absolute
+		left: 0
+		bottom: 0
+	.fase
+		position: absolute
+		left: 0
+		top: 0
+	.insta
+		position: absolute
+		top: 0
+		right: 0
+
+	.about
+		padding-top: 80px
+		padding-bottom: 50px
+		&__title
+			margin-bottom: 60px
+		&__numbers
+			.main-numbers
+				&__title
+		&__image
+			display: none
+
+	.gallery
+		.p-md-4 
+			padding: 1.8rem!important
+		margin-left: 0px
+		padding-bottom: 70px
+		.main-gallery
+			.owl-stage
+				transform: none
+			&__title
+				text-align: initial
+	.header__nav
+		display: none
+
+	.achiev
+		background-size: cover
+		&__text
+			.block-text
+				&__descr
+					font-size: 32px
+
+	.partners
+		padding-top: 80px
+		padding-bottom: 80px
+		&__title
+			margin-bottom: 60px
+	
+
+
+	.contacts
+		padding-bottom: 60px
+		&__title
+			margin-bottom: 60px
+		&__form
+			min-width: 713px
+		&__connect
+			display: flex
+			justify-content: space-between
+			margin-top: 20px
+			.contacts-block
+				&__phones
+					display: inline-block
+					max-width: 150px
+					margin: 0
+				&__cont
+					max-width: 300px
+					display: flex
+					flex-direction: column
+					align-items: flex-end
+@include media-breakpoint-only(lg)
+	.header
+		.col-lg-12
+			margin-top: 50px
+			display: flex
+			justify-content: center
+			align-items: flex-start
+		&__slider
+			display: none
+		&__main
+
+	.about
+		&__numbers
+		&__image
+			display: none
+
+	.gallery
+		margin-left: 0
+		.main-gallery
+			&__title
+				text-align: initial
+			.owl-stage
+				transform: none
+
+	.contacts
+		.offset-lg-2 
+			margin-left: 11.66667%
+		&__connect
+			display: flex
+			justify-content: space-between
+			margin-top: 80px
+			.contacts-block
+				&__phones
+					padding-left: 15px
+					display: inline-block
+					max-width: 150px
+					margin: 0
+				&__cont
+					max-width: 300px
+					display: flex
+					flex-direction: column
+					align-items: flex-end
+	.footer
+		.offset-lg-2 
+			margin-left: 13.66667%
+			
+@include media-breakpoint-only(xl)
+
+@media (min-width: 1320.98px) and (max-width: 1460.98px)
+	.container
+		margin-left: 150px
+@media (min-width: 1300.98px) and (max-width: 1320.98px)
+	.container
+		margin-left: 150px
+		max-width: 1100px
+@media (min-width: 1285.98px) and (max-width: 1300.98px)
+	.container
+		margin-left: 150px
+		max-width: 1050px
+	.header
+		.offset-1
+			margin-left: 3.33333%
+		.col-xl-6
+			flex: 0 0 57%
+			max-width: 55%
+@media (min-width: 1199.98px) and (max-width: 1285.98px)
+	.container
+		.col-xl-4
+			max-width: 27.33333%
+		margin-left: 145px
+		max-width: 1020px
+
+	.contacts
+		&__form
+			min-width: 725px
+			.form-group
+				&__area
+	.header
+		.offset-1
+			margin-left: 3.33333%
+		.col-xl-6
+			flex: 0 0 57%
+			max-width: 55%
+				
